@@ -1,9 +1,8 @@
-name: Deploy to staging
+name: Test
 
-# on: [ workflow_dispatch ]
 on:
-  push:
-    branches: [ action/staging ]
+  pull_request:
+    branches: [ develop ]
 
 jobs:
 
